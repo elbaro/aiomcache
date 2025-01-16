@@ -17,9 +17,9 @@ def read(f):
     return open(os.path.join(os.path.dirname(__file__), f)).read().strip()
 
 
-setup(name='aiomcache',
+setup(name='aiomcache-pr432',
       version=version,
-      description=('Minimal pure python memcached client'),
+      description=('Minimal pure python memcached client with PR #432'),
       long_description='\n\n'.join((read('README.rst'), read('CHANGES.rst'))),
       long_description_content_type='text/x-rst',
       classifiers=[
@@ -37,12 +37,8 @@ setup(name='aiomcache',
           'Environment :: Web Environment',
           'Framework :: AsyncIO',
       ],
-      author='Nikolay Kim',
-      author_email='fafhrd91@gmail.com',
-      maintainer=', '.join(('Nikolay Kim <fafhrd91@gmail.com>',
-                            'Andrew Svetlov <andrew.svetlov@gmail.com>')),
-      maintainer_email='aio-libs@googlegroups.com',
-      url='https://github.com/aio-libs/aiomcache/',
+      author='elbaro',
+      url='https://github.com/aio-libs/aiomcache/pull/432',
       license='BSD',
       packages=("aiomcache",),
       python_requires='>=3.8',
